@@ -1,0 +1,1168 @@
+.review-header{
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 0 32px rgba(38, 52, 72, 0.08);
+  border: 2px solid #fff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  @include desktop2{
+    padding: 15px 25px;
+  }
+  @include desktop{
+    padding: 30px 25px 25px 30px;
+  }
+  @include tablet{
+    padding: 30px 20px 80px 25px;
+    margin-bottom: 25px;
+  }
+  @include mobile{
+    display: none;
+    padding: 20px 30px;
+  }
+  &.review-header_top{
+    border-color: $red;
+  }
+}
+
+.review-header__right-top{
+  @include tablet{
+    display: none;
+  }
+}
+
+.review-header__right-top-mobile{
+  display: none;
+  @include tablet{
+    display: block;
+  }
+}
+
+.review-header-top{
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  width: 182px;
+  height: 76px;
+  padding: 6px 0 0 6px;
+  @include desktop2{
+    width: 124px;
+    height: 62px;
+  }
+  @include tablet{
+    width: 100px;
+    height: 50px;
+  }
+  &:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+    border-top: 76px solid #EA1C4B;
+    border-right: 182px solid transparent;
+    width: 0;
+    height: 0;
+    @include desktop2{
+      border-top: 62px solid #EA1C4B;
+      border-right: 124px solid transparent;
+    }
+    @include tablet{
+      border-top: 50px solid #EA1C4B;
+      border-right: 100px solid transparent;
+    }
+  }
+  span{
+    font-weight: 800;
+    font-size: 28px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    @include desktop2{
+      font-size: 20px;
+    }
+    @include tablet{
+      font-size: 18px;
+      top: -2px;
+      left: -1px;
+    }
+  }
+}
+
+.review-header__thumbnail__wrap{
+  @include desktop2{
+    height: 100%;
+    padding-right: 15px;
+    border-right: 2px solid rgba(234, 28, 75, 0.1);
+  }
+  @include desktop{
+    flex: none;
+    border-right: none;
+    padding-right: 0;
+  }
+  @include tablet{
+    width: 76px;
+  }
+}
+
+.review-header__left{
+  display: flex;
+  flex: none;
+  align-items: flex-start;
+  margin-right: 30px;
+  @include desktop2{
+    margin-right: 0;
+    flex: initial;
+  }
+}
+
+.review-header__thumbnail{
+  display: block;
+  margin-right: 30px;
+  @include desktop2{
+    width: 140px;
+    margin-right: 0;
+  }
+  @include tablet{
+    width: 76px;
+  }
+  @include mobile{
+    width: 60px;
+    margin-right: 20px;
+  }
+}
+
+.review-header__left-block{
+  width: 480px;
+  @include desktop2{
+    width: auto;
+    padding: 10px 15px;
+  }
+  @include desktop{
+    padding: 0 15px 0 25px;
+  }
+  @include tablet{
+    width: 325px;
+    padding: 5px 0 0 25px;
+  }
+  .trust-players{
+    width: 320px;
+    @include desktop2{
+      width: 215px;
+      margin-right: 25px;
+    }
+    @include desktop{
+      margin-bottom: 15px;
+    }
+    @include tablet{
+      width: 170px;
+      margin-bottom: 0;
+      margin-right: 20px;
+      flex: none;
+    }
+  }
+  .rmp-widgets-container{
+    @include tablet{
+      position: absolute;
+      top: 90px;
+      left: 22px;
+    }
+  }
+}
+
+.review-header__left-block-block{
+  @include desktop2{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  @include desktop{
+    display: block;
+  }
+  @include tablet{
+    display: flex;
+  }
+}
+
+.review-header__title{
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 5px;
+  @include desktop2{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  @include desktop{
+    margin-bottom: 12px;
+  }
+  @include tablet{
+    font-size: 20px;
+  }
+  @include mobile{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  span{
+    color: $red;
+  }
+}
+
+.rmp-widgets-container.rmp-wp-plugin.rmp-main-container{
+  @include desktop2{
+    margin: 0;
+  }
+}
+
+.review-header__center{
+  margin-top: auto;
+  display: flex;
+  @include desktop2{
+    display: none;
+  }
+}
+
+.review-header__center-mobile{
+  display: none;
+  @include desktop2{
+    display: flex
+  }
+  @include desktop{
+    margin-left: -162px;
+  }
+  @include tablet{
+    margin-left: -95px;
+  }
+  @include mobile{
+    margin-left: 0;
+    display: block;
+  }
+}
+
+.review-header__right{
+  flex: none;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  @include desktop2{
+    padding-top: 60px;
+  }
+  @include desktop{
+    padding-top: 50px;
+  }
+  @include tablet{
+    padding-top: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 30px;
+  }
+  form{
+    margin-top: auto;
+    @include desktop2{
+      display: none;
+    }
+  }
+}
+
+.form-red-btn_mobile{
+  display: none;
+  margin-top: auto;
+  form{
+    display: block;
+  }
+  @include desktop2{
+    display: block;
+  }
+  @include mobile{
+    margin-top: 10px;
+    button{
+      margin-left: auto;
+    }
+  }
+}
+
+.review-header__pros-title, .review-header__menuses-title{
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-bottom: 10px;
+  @include tablet{
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+  &:before{
+    content: '';
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.review-header__pros, .review-header__menuses{
+  .pros-casino{
+    li{
+      font-weight: 400;
+      font-size: 16px;
+      @include tablet{
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.review-header__pros{
+  margin-right: 30px;
+  @include desktop{
+    margin-right: 20px;
+  }
+  @include mobile{
+    margin-right: 0;
+  }
+  .review-header__pros-title{
+    &:before{
+      background-color: $green;
+    }
+  }
+}
+
+.review-header__menuses{
+  @include mobile{
+    margin-top: 12px;
+  }
+}
+
+.review-header__menuses{
+  .review-header__menuses-title{
+    &:before{
+      background-color: $blue;
+    }
+  }
+}
+
+.review-header__votes, .review-header__reviews{
+  display: flex;
+  a{
+    width: 146px;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: $dark;
+    @include desktop2{
+      font-size: 16px;
+    }
+    @include desktop{
+      font-size: 14px;
+    }
+    @include mobile{
+      font-size: 10px;
+      width: 82px;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    img{
+      display: block;
+      margin-right: 8px;
+      @include desktop{
+        width: 20px;
+      }
+      @include mobile{
+        width: 16px;
+      }
+    }
+  }
+}
+
+.review-header__votes{
+  margin-bottom: 15px;
+  @include desktop2{
+    margin-bottom: 10px;
+  }
+  @include desktop{
+    margin-bottom: 5px;
+  }
+}
+
+.review-link{
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 0 32px rgba(38, 52, 72, 0.08);
+  border-radius: 8px;
+  padding: 10px 30px;
+  margin-bottom: 40px;
+  @include tablet{
+    padding: 20px 30px;
+    margin-bottom: 25px;
+  }
+  .btn{
+    width: 250px;
+    height: 56px;
+    border-radius: 16px 0;
+    font-size: 18px;
+    font-weight: 800;
+    @include tablet{
+      height: 40px;
+      border-radius: 8px 0px;
+    }
+  }
+}
+
+.review-block{
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 40px;
+  @include desktop{
+    padding-bottom: 0;
+    margin-bottom: 15px;
+  }
+  @include mobile{
+    padding: 20px;
+  }
+}
+
+.review-block__title{
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  color: #000;
+  margin-bottom: 30px;
+  @include desktop{
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  @include tablet{
+    text-align: center;
+  }
+  @include mobile{
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+}
+
+.review-block__items{
+  @include desktop{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.review-block__item{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 15px;
+  &:last-child{
+    margin-bottom: 0;
+    @include desktop{
+      margin-bottom: 30px;
+    }
+    @include mobile{
+      margin-bottom: 0;
+    }
+  }
+  @include desktop{
+    display: block;
+    margin-bottom: 30px;
+    &.review-block__item_lic{
+      flex-basis: 175px;
+    }
+    &.review-block__item_time{
+      flex-basis: 175px;
+    }
+    &.review-block__item_limit{
+      flex-basis: 175px;
+    }
+    &.review-block__item_dep{
+      flex-basis: 370px;
+    }
+    &.review-block__item_ver{
+      flex-basis: 175px;
+    }
+  }
+  @include tablet{
+    flex-basis: 100% !important;
+  }
+  @include mobile{
+    margin-bottom: 20px;
+  }
+}
+
+.review-block__item-line{
+  flex: 1;
+  height: 1px;
+  /*width: 100%;*/
+  width: auto;
+  min-width: 50px;
+  display: block;
+  background-color: rgba(23, 146, 231, 0.05);
+  @include desktop{
+    display: none;
+  }
+}
+
+.review-block__item-title{
+  flex: none;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #000;
+  margin-right: 10px;
+  @include desktop{
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  @include tablet{
+    justify-content: center;
+  }
+  @include mobile{
+    font-size: 14px;
+  }
+}
+
+.review-block__item-img{
+  width: 24px;
+  margin-right: 10px;
+  img{
+    display: block;
+  }
+}
+
+.review-block__item-value{
+  /*flex: none;*/
+  font-weight: 600;
+  font-size: 18px;
+  margin-left: 10px;
+  text-align: right;
+  @include desktop{
+    margin-left: 0;
+    text-align: left;
+  }
+  @include tablet{
+    text-align: center;
+  }
+  @include mobile{
+    font-size: 14px;
+    max-width: 180px;
+    margin: 0 auto;
+  }
+  a{
+    color: $red;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+.review-blocks{
+  display: flex;
+  margin: 0 -15px 30px;
+  @include desktop{
+    margin: 0 -7.5px 15px;
+  }
+  @include tablet{
+    display: block;
+    margin: 0;
+  }
+}
+
+.review-nuances{
+  @include tablet{
+    margin-bottom: 25px;
+  }
+}
+
+.review-blocks__item{
+  width: 360px;
+  margin: 0 15px;
+  box-shadow: 0 4px 32px rgba(234, 28, 75, 0.06);
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include desktop2{
+    display: block;
+  }
+  @include desktop{
+    padding: 15px;
+    margin: 0 7.5px;
+    border-radius: 8px;
+  }
+  @include tablet{
+    margin: 0 0 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &.review-blocks__item_djeck{
+    border: 2px solid $red;
+    .review-blocks__item-value{
+      color: $red;
+    }
+  }
+  &.review-blocks__item_return{
+    border: 2px solid $blue;
+    .review-blocks__item-value{
+      color: $blue;
+    }
+  }
+  &.review-blocks__item_speed{
+    border: 2px solid $green;
+    .review-blocks__item-value{
+      color: $green;
+    }
+  }
+}
+
+.review-blocks__item-title{
+  font-weight: 800;
+  font-size: 18px;
+  @include desktop2{
+    margin-bottom: 5px;
+  }
+  @include desktop{
+    font-size: 16px;
+  }
+  @include tablet{
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+
+.review-blocks__item-value{
+  font-weight: 800;
+  font-size: 26px;
+  @include desktop2{
+    text-align: right;
+  }
+  @include desktop{
+    font-size: 22px;
+  }
+  @include tablet{
+    font-size: 18px;
+  }
+}
+
+.review-bonuses{
+  display: flex;
+  margin: 0 -15px;
+  @include desktop{
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -20px;
+  }
+  @include tablet{
+    margin: 0;
+  }
+}
+
+.review-about{
+  @include desktop{
+    margin-bottom: 40px;
+  }
+}
+
+.review-bonuses__item{
+  position: relative;
+  width: 360px;
+  margin: 0 15px;
+  box-shadow: 0 4px 32px rgba(234, 28, 75, 0.08);
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 30px;
+  @include desktop2{
+    padding: 20px;
+  }
+  @include desktop{
+    width: 324px;
+    margin: 0 20px 40px;
+    border-radius: 8px;
+    &:nth-child(2){
+      .review-bonuses__item-dop-block{
+        left: initial;
+        transform: none;
+        right: 0;
+      }
+    }
+  }
+  @include tablet{
+    margin-bottom: 35px;
+    &:first-child{
+      .review-bonuses__item-dop-block{
+        left: initial;
+        transform: none;
+        right: 0;
+      }
+    }
+  }
+  &:last-child{
+    .review-bonuses__item-dop-block{
+      left: initial;
+      transform: none;
+      right: 0;
+    }
+  }
+}
+ 
+.review-bonuses__item-bonus{
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 57px;
+  height: 57px;
+  display: flex;
+  background-image: url(images/bonus.svg);
+  text-align: center;
+  span{
+    margin: auto;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 16px;
+    color: #fff;
+  }
+}
+
+.review-bonuses__item-block-item-value{
+  text-align: right;
+  flex: none;
+  min-width: 118px;
+}
+
+.review-bonuses__item-title-wrap{
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.review-bonuses__item-title{
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: $red;
+  position: relative;
+  min-width: 230px;
+  margin: 0 auto;
+  display: inline-block;
+  padding-bottom: 5px;
+  @include desktop2{
+    font-size: 16px;
+  }
+  &:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $blue;
+  }
+}
+
+.review-bonuses__item-block{
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.review-bonuses__item-block-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  span{
+    font-weight: 600;
+  }
+}
+
+.review-bonuses__item-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.review-bonuses__item-dop{
+  position: relative;
+  &:hover{
+    .review-bonuses__item-dop-block{
+      display: block;
+    }
+  }
+  img{
+    display: block;
+  }
+}
+
+.review-bonuses__item-dop-block{
+  display: none;
+  position: absolute;
+  z-index: 2;
+  top: 24px;
+  left: 24px;
+  width: 460px;
+  line-height: 26px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px -2px 16px rgba(12, 28, 51, 0.1);
+  @include desktop2{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include tablet{
+    width: 330px;
+  }
+  @include mobile{
+    width: 240px;
+    padding: 8px 12px;
+  }
+}
+
+.review-check-game{
+  margin: 50px 0;
+  @include mobile{
+    margin: 30px 0;
+  }
+}
+
+.review-check-game__title{
+  background-color: $dark;
+  border-radius: 16px 16px 0 0;
+  color: #fff;
+  text-align: center;
+  padding: 12px 30px 13px;
+  font-weight: bold;
+  font-size: 26px;
+  @include desktop{
+    font-size: 22px;
+  }
+  @include mobile{
+    font-size: 16px;
+    span{
+      display: block;
+    }
+  }
+  span{
+    color: $red;
+  }
+}
+
+.review-check-game__main{
+  background-color: #fff;
+  padding: 25px 30px;
+  @include mobile{
+    padding: 10px 15px 20px;
+  }
+}
+
+.review-check-game__main-title{
+  text-align: center;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 15px;
+  @include desktop{
+    font-size: 20px;
+  }
+  @include mobile{
+    font-size: 16px;
+  }
+}
+
+.review-check-game__main-block{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn{
+    width: 150px;
+    margin-left: 30px;
+    @include desktop2{
+      height: 38px;
+      margin-left: 10px;
+    }
+  }
+  .jq-selectbox__select{
+    box-shadow: none;
+    background: #EAF1F6;
+    border: 1px solid #D5E3ED;
+    border-radius: 4px;
+    height: 38px;
+    padding-left: 15px;
+  }
+  .jq-selectbox__select-text{
+    height: 38px;
+    padding-top: 2px;
+    font-family: 'Manrope', open-sans;
+    font-size: 16px;
+    @include mobile{
+      font-size: 12px;
+    }
+  }
+  .jq-selectbox__trigger{
+    border-left: none;
+    background-image: url(images/select.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 48px;
+  }
+  .jq-selectbox__trigger-arrow{
+    display: none;
+  }
+  .jq-selectbox li:hover{
+    background-color: $red;
+  }
+}
+
+.review-check-game__success{
+  background-color: #fff;
+  padding: 0 30px 30px;
+  border-radius: 0px 0px 16px 16px;
+  text-align: center;
+  @include mobile{
+    padding-bottom: 20px;
+  }
+  hr{
+    border: none;
+    height: 1px;
+    width: 100%;
+    display: block;
+    background-color: #EAF1F6;
+    margin-bottom: 25px;
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.review-check-game__success-title{
+  font-weight: 800;
+  font-size: 26px;
+  margin-bottom: 15px;
+  @include desktop{
+    font-size: 22px;
+  }
+  @include mobile{
+    font-size: 16px;
+  }
+}
+
+.review-total{
+  @include desktop{
+    padding-bottom: 30px;
+  }
+}
+
+.review-total__header{
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mobile{
+    margin-bottom: 20px;
+  }
+  .review-block__title{
+    margin-bottom: 0;
+  }
+}
+
+.review-total__votes{
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  @include desktop{
+    font-size: 16px;
+  }
+  img{
+    display: block;
+    margin-right: 8px;
+  }
+}
+
+.review-total__bottom{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include tablet{
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include mobile{
+    margin-top: 20px;
+  }
+  .review-block__title{
+    margin-bottom: 0;
+    @include tablet{
+      margin-bottom: 10px;
+    }
+  }
+  .rating-view{
+    @include tablet{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .rating-view__stars{
+      @include tablet{
+        margin-right: 0;
+        margin-bottom: 4px;
+      }
+    }
+    i{
+      font-size: 32px;
+      @include desktop{
+        font-size: 24px;
+        margin-right: 8px;
+      }
+    }
+    .rating-view__number{
+      position: relative;
+      top: 2px;
+      font-size: 26px;
+      @include desktop{
+        font-size: 22px;
+        margin-left: 5px;
+        top: 1px;
+      }
+      @include tablet{
+        font-size: 18px;
+        margin-left: 0;
+      }
+      span{
+        font-size: 26px;
+        @include desktop{
+          font-size: 22px;
+        }
+        @include tablet{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.rating-casino__item-rating-comment-mobile{
+  display: none;
+  @include tablet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    img{
+      width: 32px;
+      height: 32px;
+      margin: 0 auto 2px;
+    }
+    &>span{
+      font-size: 16px;
+      &>span{
+        color: #000;
+      }
+    }
+  }
+  @include mobile{
+    img{
+      width: 22px;
+      height: 22px;
+    }
+    &>span {
+      font-size: 14px;
+    }
+  }
+}
+
+.comment-rating-wrapper{
+  margin-bottom: 10px;
+  ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .rmp-rating-widget__icons-list{
+    @include tablet{
+      display: none;
+    }
+  }
+  .rmp-icon--ratings{
+    font-size: 32px;
+  }
+  .rmp-icon--full-highlight{
+    color: $orange;
+  }
+  .rating-container > input + label{
+    width: 26px;
+    font-family: ratemypost!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+  }
+  .rating-container > input + label:before{
+    font-size: 26px;
+    content: "\f005";
+  }
+  .rating-container > input:checked ~ label:before,
+  .rating-container > input + label:hover ~ label:before,
+  .rating-container > input + label:hover:before {
+    content: "\f005";
+    color: $orange;
+  }
+}
+
+
+
+.review-header-mobile{
+  display: none;
+  @include mobile{
+    display: block;
+  }
+}
+
+.review-header-mobile__top{
+  @include mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+
+.review-header-mobile-center{
+  @include mobile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    .trust-players{
+      width: 170px;
+    }
+    .rating-casino__item-rating{
+      flex-direction: column;
+      justify-content: center;
+      img{
+        margin: 0 auto 2px;
+      }
+      &>span{
+        font-size: 12px;
+        &>span{
+          color: #000;
+        }
+      }
+    }
+  }
+}

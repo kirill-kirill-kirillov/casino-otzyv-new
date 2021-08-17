@@ -1,0 +1,18 @@
+.single-casino-review, .single-casino-comment{
+  .page-content-main__content{
+    margin-top: 50px;
+    @include tablet{
+      margin-top: 0;
+    }
+  }
+  @include desktop2{
+    .page-content-main__right{
+      display: none;
+    }
+    .sidebar-top-mobile{
+      .page-content-main__right{
+        display: block;
+      }
+    }
+  }
+}

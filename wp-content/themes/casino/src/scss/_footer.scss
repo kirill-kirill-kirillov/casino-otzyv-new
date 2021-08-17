@@ -1,0 +1,99 @@
+.footer{
+  background-color: $dark;
+  flex: 0 0 auto;
+  hr{
+    height: 1px;
+    border: none;
+    background-color: rgba(234, 241, 246, 0.2);
+  }
+}
+
+.footer__main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 76px;
+  @include desktop2{
+    height: auto;
+    padding: 45px 0 25px;
+    align-items: flex-start;
+  }
+  @include tablet{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__logo{
+  @include tablet{
+    width: 100%;
+    flex: none;
+    margin-bottom: 20px;
+    img{
+      margin: 0 auto;
+    }
+  }
+}
+
+.footer__menu{
+  @include desktop2{
+    display: block;
+    columns: 2;
+  }
+  @include desktop{
+    columns: 1;
+  }
+  li{
+    @include desktop2{
+      margin-bottom: 15px;
+      margin-right: 40px;
+    }
+    @include desktop{
+      margin-right: 0;
+    }
+  }
+  a{
+    font-size: 18px;
+    @include tablet{
+      font-size: 14px;
+    }
+  }
+  img{
+    @include tablet{
+      width: 26px;
+    }
+  }
+}
+
+.footer__bottom{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__copy{
+  color: rgba(234, 241, 246, 0.2);
+  font-size: 14px;
+}
+
+.footer__scroll-top{
+  display: none;
+  border-radius: 4px;
+  width: 62px;
+  height: 44px;
+  background-color: $red;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  img{
+    display: block;
+  }
+  @include desktop2{
+    display: flex;
+  }
+  @include tablet{
+    width: 56px;
+  }
+}

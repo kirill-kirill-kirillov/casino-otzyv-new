@@ -1,0 +1,171 @@
+.blog-block{
+  .pagination{
+    margin-top: 20px;
+  }
+}
+
+.blog-block__items{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  margin: 0 -15px;
+  @include desktop{
+    margin: 0;
+  }
+}
+
+.blog-block__item{
+  width: 555px;
+  margin: 0 15px 30px;
+  display: flex;
+  flex-direction: column;
+  @include desktop2{
+    width: 447px;
+  }
+  @include desktop{
+    width: 100%;
+    margin: 0 0 25px;
+  }
+}
+
+.blog-block__item-thumbnail{
+  position: relative;
+  z-index: 2;
+  display: block;
+  border-radius: 15px 0;
+  margin: 0 auto -25px;
+  @include desktop2{
+    width: 388px;
+  }
+  @include desktop{
+    width: 624px;
+  }
+  @include tablet{
+    width: 400px;
+  }
+  @include mobile{
+    width: 240px;
+  }
+}
+
+.blog-block__item-main{
+  background-color: #fff;
+  padding: 50px 25px 25px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.blog-block__item-title{
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 15px;
+  @include desktop2{
+    font-size: 20px;
+  }
+  @include desktop{
+    font-size: 22px;
+  }
+  @include tablet{
+    font-size: 20px;
+  }
+  @include mobile{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+.blog-block__item-excerpt{
+  line-height: 26px;
+  margin-bottom: 25px;
+  @include desktop2{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  @include desktop{
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  @include tablet{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  @include mobile{
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+
+.blog-block__item-bottom{
+  margin-top: auto;
+}
+
+.blog-block__item-bottom{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-block__item-date{
+  font-weight: 500;
+  color: rgba(12, 28, 51, 0.35);
+  @include mobile{
+    position: relative;
+    top: 1px;
+  }
+}
+
+.blog-block__item-more{
+  position: relative;
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+  color: $dark;
+  text-decoration: none;
+  transition: 0.2s;
+  padding-left: 28px;
+  @include mobile{
+    font-size: 14px;
+    padding-left: 20px;
+  }
+  &:hover{
+    color: $green;
+    .blog-block__item-more-button{
+      span{
+        background-color: $green;
+        &:first-child{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.blog-block__item-more-button{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  @include mobile{
+    top: 9px;
+    width: 12px;
+    height: 12px;
+  }
+  span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: 0.2s;
+    display: block;
+    background-color: $red;
+    border-radius: 20px;
+    &:first-child{
+      display: none;
+      transform: rotate(90deg);
+    }
+  }
+}

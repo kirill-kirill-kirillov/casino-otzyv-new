@@ -1,0 +1,57 @@
+.block-anchors{
+  margin-bottom: 50px;
+  @include desktop{
+    margin-bottom: 40px;
+  }
+}
+
+.block-anchors__title{
+  font-weight: bold;
+  font-size: 28px;
+  cursor: pointer;
+  @include desktop{
+    font-size: 22px;
+  }
+  @include mobile{
+    font-size: 18px;
+  }
+  span{
+    margin-right: 10px;
+  }
+  img{
+    position: relative;
+    top: -1px;
+    transition: 0.5s;
+    @include mobile{
+      top: 1px;
+    }
+  }
+  &.active{
+    img{
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.block-anchors__block{
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 20px;
+  @include desktop{
+    padding: 25px;
+  }
+  ol{
+    margin-left: 0;
+  }
+}
+
+.block-anchors__item{
+  a{
+    font-weight: 600;
+    color: $dark;
+    transition: 0.2s;
+    &:hover{
+      color: $red;
+    }
+  }
+}
